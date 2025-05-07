@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .left-side {
+    flex: 1;
+    background-image: url('/assets/img/kofe.jpg');
+    background-size: cover;
+    background-position: 80% center; 
+    background-repeat: no-repeat;
+  }
+  
+  .right-side {
+    flex: 2;
+    background-color: #e7e0d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: #333;
+  }
+
+  .text-side {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .text-side h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .text-side p {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .nikname{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 87%;
+  }
+  
+  .nikname span {
+    color: rgb(165, 159, 159);
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-side {
+      height: 250px;
+      width: 100%;
+    }
+    
+  
+    .right-side {
+      flex: none;
+      padding: 20px;
+    }
+  
+    .text-side {
+      padding: 20px;
+      align-items: flex-start;
+    }
+  
+    .text-side h1 {
+      font-size: 24px;
+      text-align: left;
+    }
+  
+    .text-side p {
+      font-size: 16px;
+      text-align: left;
+    }
+  
+    .nikname {
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+  
+    .nikname span {
+      font-size: 16px;
+    }
+  }

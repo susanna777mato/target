@@ -1,0 +1,134 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .structure-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 40px;
+    gap: 20px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 50px;
+  }
+
+  h2{
+    font-size: 50px;
+  }
+
+  h3{
+    font-size: 50px;
+  }
+  
+  .structure-section h2,
+  .structure-section h3 {
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .structure-section p {
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  h4{
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .structure-section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .structure-section li {
+    margin-bottom: 8px;
+    font-size: 25px;
+  }
+
+  p, ul {
+    font-weight: 300;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .structure-section hr {
+    margin: 30px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .nikname{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 95%;
+  }
+  
+  .nikname span {
+    color: rgb(165, 159, 159);
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  @media (max-width: 800px) {
+    .wrapper {
+      display: block;
+      padding: 10px;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .structure-section {
+      padding-left: 0;
+      gap: 15px;
+    }
+  
+    .structure-section h2,
+    .structure-section h3 {
+      font-size: 32px;
+    }
+  
+    .structure-section p {
+      font-size: 16px;
+    }
+  
+    .structure-section h4 {
+      font-size: 20px;
+    }
+  
+    .structure-section ul {
+      margin-left: 10px;
+    }
+  
+    .structure-section li {
+      font-size: 16px;
+    }
+  
+    .structure-section hr {
+      margin: 20px 0;
+    }
+  
+    .nikname {
+      justify-content: flex-end;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .nikname span {
+      font-size: 16px;
+    }
+  }
