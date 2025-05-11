@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-structur',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./structur.component.css']
 })
 export class StructurComponent {
+
+ 
 
 }

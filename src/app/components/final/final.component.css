@@ -110,6 +110,52 @@
     text-decoration: none;
 
   }
+
+  .lux-footer {
+    background-color: #FAF6F2;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #3A2C27;
+    position: relative;
+  }
+  
+  .lux-line {
+    height: 1px;
+    width: 80px;
+    background-color: #D6C3B8;
+    margin: 0 auto 24px;
+  }
+  
+  .lux-title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  .lux-subtitle {
+    font-size: 16px;
+    color: #7C6A61;
+    margin: 10px 0 20px;
+    font-style: italic;
+  }
+  
+  .lux-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #AD8B76;
+    border: 1px solid #E8D8CC;
+    padding: 10px 22px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .lux-link:hover {
+    background-color: #E8D8CC;
+    color: #3A2C27;
+  }
+  
   
   /* Мобильная адаптация для экранов до 800px */
 @media (max-width: 800px) {

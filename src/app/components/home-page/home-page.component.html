@@ -1,4 +1,16 @@
-<div class="container">
+<div id="section1" class="container">
+  <div class="navbar">
+    <div class="burger" (click)="toggleMenu()">☰</div>
+  
+    <div class="menu" [class.active]="menuOpen">
+  
+      <a (click)="scrollToSection('section1')">Главная</a>
+      <a (click)="scrollToSection('section2')">Структура</a>
+      <a (click)="scrollToSection('section3')">Шапка профиля</a>
+      <a (click)="scrollToSection('section4')">Контакты</a>
+    </div>
+  </div>
+  
     <div class="left-side"></div>
     <div class="right-side">
       <div class="text-side">

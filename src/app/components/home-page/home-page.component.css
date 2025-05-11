@@ -2,7 +2,47 @@
     display: flex;
     height: 100vh; 
   }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
   
+  .burger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #f39c12;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+ 
   .left-side {
     flex: 1;
     background-image: url('/assets/img/kofe.jpg');
@@ -54,6 +94,9 @@
     font-weight: 100;
   }
 
+
+  
+
   @media (max-width: 800px) {
     .container {
       flex-direction: column;
@@ -94,4 +137,41 @@
     .nikname span {
       font-size: 16px;
     }
+   
+    .burger {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+      gap: 15px;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .menu .logo {
+      justify-content: left;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .menu a {
+      text-align: left;
+      width: 100%;
+      font-weight: 900;
+    }
+
+    .navbar {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
   }
